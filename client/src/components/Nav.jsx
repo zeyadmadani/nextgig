@@ -10,7 +10,7 @@ import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { loginSuccess,logOut } from "../redux/userSlice"
 import MenuItem from '@mui/material/MenuItem';
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
