@@ -43,7 +43,7 @@ return(<>
       <br/>
       <div className="row">
         <div className="col-lg-4">
-        <div className="changeFont">All Results</div>
+        <div className="changeFont">All Resultsss</div>
         </div>
         <div className="col-lg-4"></div>
         <div className="col-lg-4"></div>
