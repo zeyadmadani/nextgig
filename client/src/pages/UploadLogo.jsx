@@ -83,7 +83,7 @@ return(<>
 
 
 <div style={{minHeight:10,top:"32%"}} className="con">
-<div style={{textAlign:"center"}}>
+<div style={{textAlign:"center",height:"26vh"}}>
 <form >     
  <br/>
 
