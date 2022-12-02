@@ -75,20 +75,7 @@ export const LogoNav= () => {
 <Spot>
     <Logo width={100} height={60} src="/Jobs-Logo.png"/>
 </Spot>
-<Spot>
-<InputContainer>
-<Input1 className="inputs" type="text" placeholder="Search Jobs, Keywords, Companies"/>
-<Break/>
-<Input2 style={{position:"relative"}} className="inputs" type="text" placeholder="Enter Location"/>
-<input style={{height:50}} className="FirstBtn" type="submit" value="Search"/>
-</InputContainer>
-<Spot>
-    
-</Spot>
-<Spot>    
-     
-</Spot>
-</Spot>
+
 <Spot className="lastSpot">
 {currentUser?     <PopupState className="jfdiujssd" variant="popover" popupId="demo-popup-menu">
       {(popupState) => (

@@ -93,7 +93,7 @@ function App() {
  <Route path="forgot-password" element={<ForgotPassword/>} />
  <Route path="profile" element={currentUser? <Profile/> : <Login/>} />
  <Route path="career-advice" element={<CareerAdvice/>} />
- <Route path="upload-resume" element={<UploadResume/>} />
+ <Route path="upload-resume" element={ <UploadResume/>} />
  <Route path="first-90-day" element={<First90Days/>} />
  <Route path="FirstStory" element={<FirstStory/>} />
  <Route path="SecondStory" element={<SecondStory/>} />
