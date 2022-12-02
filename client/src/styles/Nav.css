@@ -102,7 +102,7 @@ margin-right:10px;
         text-align: center;
         background-color:#fff;
         border-radius: 20px;
-        z-index: -99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
+        z-index: -99999999999 !important;
         display: none;
     }   
     .jdhks
@@ -110,12 +110,21 @@ margin-right:10px;
         animation-duration: 0.25s;
         transition-duration: 0.2s;
         display: flex !important;
-        z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
+        z-index: 99999999999 !important;
     }
     .ifdujfed
     {
         width:70px;
     }
+    .hgjksuijgkfds
+{
+background-color: white;
+border-color: #fff;
+height:0px !important;
+width:0px !important;
+outline:none !important;
+border:none !important;
+}
 }
 .sidebar
 {
@@ -151,13 +160,4 @@ margin-right:10px;
 .css-1w1rijm-MuiButtonBase-root-MuiButton-root
 {
     outline: none !important;
-}
-.hgjksuijgkfds
-{
-background-color: white;
-border-color: #fff;
-height:0px !important;
-width:0px !important;
-outline:none !important;
-border:none !important;
 }
