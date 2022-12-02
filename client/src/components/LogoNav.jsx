@@ -118,31 +118,7 @@ export const LogoNav= () => {
 </Spot>
 </Container>
 <Container>
-<Spot></Spot>
-<Spot className="spot">
-<Spot className="tools">
-<Link to="/" style={{textDecoration:"none",color:"inherit"}}>
-Find Jobs
-</Link>
-</Spot>
-<Spot className="tools">
-<Link to="/career-advice" style={{textDecoration:"none",color:"inherit"}}>
-Career Advice
-</Link>
-</Spot>
-<Spot className="tools">
-<Link to="/upload-resume" style={{textDecoration:"none",color:"inherit"}}>
-Upload Resume
-</Link>
-</Spot>
-<Spot className="tools">
-  {!currentUser && <Link to="/EmployerSignIn" style={{textDecoration:"none",color:"inherit"}}>
-Post a Job
-</Link> }
 
-</Spot>
-</Spot>
-<Spot></Spot>
 </Container>
 </>
    )
