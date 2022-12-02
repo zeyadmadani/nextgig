@@ -63,7 +63,7 @@ return(<>
 <p style={{color:"crimson"}} className="changeFont">Please Log In to Continue</p>
 
 </form>
-<Link to="/EmployerRegisteration"><button className="sec">Don't Have An Account? Sign Up Instead</button></Link>
+<Link to="/register"><button className="sec">Don't Have An Account? Sign Up Instead</button></Link>
 <br/><br/>
 <Link to="/forgot-password"><div className="centerTxt">Forgot Password?</div></Link><br/>
 </div>

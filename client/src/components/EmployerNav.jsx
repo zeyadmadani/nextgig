@@ -73,7 +73,7 @@ export const EmployerNav= () => {
 <Container>
 
 <Spot>
-    <Logo width={100} height={60} src="/jobs-logo.png"/>
+    <Logo width={100} height={60} src="/Jobs-Logo.png"/>
 </Spot>
 <Spot>
 <Spot>

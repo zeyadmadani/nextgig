@@ -6,3 +6,9 @@
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: none !important;
   }
+  .css-1w1rijm-MuiButtonBase-root-MuiButton-root
+{
+    outline: none !important;
+    border-color: transparent !important;
+    border:none !important;
+}

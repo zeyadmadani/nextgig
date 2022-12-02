@@ -36,8 +36,8 @@ return(<>
     <Job>
 <div className="container">
     <div className="row">
-    <div className="col-lg-1"></div>
-    <div className="col-lg-10">
+
+    <div className="col-lg-12">
 {
 loading? <img style={{display:"block",margin:"0 auto"}} src="loading.gif"/>:
 jobs.length>0 ?
@@ -50,7 +50,7 @@ jobs.map(job=>
 }
     
     </div>
-    <div className="col-lg-1"></div>
+
     </div>
 </div>
 

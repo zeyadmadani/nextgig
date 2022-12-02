@@ -52,9 +52,9 @@ res.status===200 && handleOpen()
 
 return(<>
 <Job style={{display:"flex",alignItems:"center",gap:5,justifyContent:"space-between",borderBottom:"2px solid grey"}}> 
-<div style={{display:"flex", alignItems:"center",gap:15}}>
+<div style={{display:"flex", alignItems:"center",gap:30}}>
 
-<div><img className="jhbkdfjns" width={100} height={100} src={job.logo}/></div>
+<img className="jhbkdfjns" width={100} height={100} src={job.logo}/>
 <div>
 <h3>
     <div className="changeFont" style={{width:80,height:30,backgroundColor:"#8000ff",borderRadius:15,color:"white",fontSize:15,display:"flex",alignItems:"center",justifyContent:"center"}}>Posted</div>
@@ -64,13 +64,11 @@ return(<>
 <h6>{job.address}, {job.city}</h6>
 <h6>{job.applied.length} Candidates Applied</h6>
 <h6 style={{display:"flex",alignItems:"center",cursor:"pointer"}}>
-   <Link style={{color:"inherit",textDecoration:"none"}} to={`/view-candidates/${job._id}`}> <h5 className="changeFont" style={{marginTop:5}}>View Applicants</h5></Link>
+   <Link style={{color:"inherit",textDecoration:"none"}} to={`/view-candidates/${job._id}`}> <h6 className="changeFont" style={{marginTop:5}}>View Applicants</h6></Link>
     <ArrowRightAltIcon style={{fontSize:35}}/></h6>
 </div>
 </div>
-<div>
-      <DeleteIcon onClick={handleDelete} style={{fontSize:40,color:"crimson",cursor:"pointer"}}/> 
-</div>
+      <DeleteIcon onClick={handleDelete} style={{fontSize:30,color:"crimson",cursor:"pointer"}}/> 
 </Job>
 
 <Modal

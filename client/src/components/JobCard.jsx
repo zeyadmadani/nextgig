@@ -15,7 +15,7 @@ const JobCard=({job})=>
     const {currentUser}=useSelector(state=>state.user)
 return(<>
 <Job style={{borderBottom:"2px solid grey"}}> 
-<div><img width={100} height={100} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"/></div>
+<img style={{borderRadius:"50%"}} width={100} height={100} src={job.logo}/>
 <div>
 <h3>
     <div className="changeFont" style={{width:80,height:30,backgroundColor:"grey",borderRadius:15,color:"white",fontSize:15,display:"flex",alignItems:"center",justifyContent:"center"}}>Applied</div>
