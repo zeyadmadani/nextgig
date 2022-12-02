@@ -94,7 +94,7 @@ navigate(`/search/${query1+"+"+query2}`)
 <Container>
 
 <Spot>
-    <Logo className="ifdujfed" width={100} height={60} src="/jobs-logo.png"/>
+    <Logo className="ifdujfed" width={100} height={60} src="/Jobs-Logo.png"/>
 </Spot>
 <form onSubmit={e=>handleSearch(e)}>
 <InputContainer className={`inpcon ${searchBar && "jdhks"}`}>

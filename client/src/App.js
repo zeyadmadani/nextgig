@@ -15,13 +15,12 @@ import EmployerSignUp from "./pages/EmployerSignUp";
 import Reset from "./pages/Reset";
 import EmployerSignin from "./pages/EmployerSignin";
 import Profile from "./pages/Profile";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import ContactInformation from "./pages/ContactInformation";
 import Location from "./pages/Location";
 import Summary from "./pages/Summary"
 import Success from "./pages/Success";
 import Jobs from "./pages/Jobs";
-import SingleJob from "./pages/SingleJob";
 import LoginToContinue from "./pages/LoginToContinue";
 import WrongCredentials from "./pages/WrongCredentials"
 import LoginToContinueToUploadResume from "./pages/LoginToContinueToUploadResume";
@@ -33,7 +32,7 @@ import EmployerWrongCredentials from "./pages/EmployerWrongCredentials";
 import UploadResumeFirst from "./pages/UploadResumeFirst"
 import ViewJob from "./pages/ViewJob"
 import Search from "./pages/Search"
-import axios from "axios";
+import { axiosInstance } from "./configuration/Config";
 import {useState, useEffect} from "react"
 import Error from "./pages/Error";
 import Viewgig from "./pages/Viewgig";
@@ -44,7 +43,7 @@ function App() {
   {
   const getAllJobs=async()=>
   {
-    const res=await axios.get(`/Jobs/getalljobs`)
+    const res=await axiosInstance.get(`/Jobs/getalljobs`)
     setJobs(res.data.reverse())
   }
   getAllJobs()
