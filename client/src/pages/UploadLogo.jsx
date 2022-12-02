@@ -97,7 +97,6 @@ return(<>
 </label>
  :<h5 className="changeFont"> Uploaded {logoPerc}%</h5>
 }
-<input style={{color:"#fff",width:100,marginTop:50}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Continue"/>
 </form>
 </div>
 </div>
