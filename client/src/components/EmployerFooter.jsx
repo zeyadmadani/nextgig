@@ -28,7 +28,7 @@ return(<>
 Services
 </h6>
 <br/>
-<Link style={{textDecoration:"none",color:"inherit"}} to="/Register">
+<Link style={{textDecoration:"none",color:"inherit"}} to="/post">
 <p>Post Jobs &#x28;for Employers&#x29;</p>
 </Link>
 <Link style={{textDecoration:"none",color:"inherit"}} to="/applications">
