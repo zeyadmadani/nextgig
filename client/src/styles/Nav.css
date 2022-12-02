@@ -104,13 +104,13 @@ margin-right:10px;
         border-radius: 20px;
         transform: translateY(0px);
         z-index: -999999999999999999 !important;
-        display: block;
+        display: none;
     }   
     .jdhks
     {
         animation-duration: 0.25s;
         transition-duration: 0.2s;
-        display: none;
+        display: flex !important;
         z-index: 99999999999999999999999999999999999999999999999999999999999999 !important;
     }
     .ifdujfed
