@@ -26,7 +26,7 @@ position:relative;
 const Main=styled.div
 `
 width:100%;
-height:60vh;
+height:75vh;
 `
     const Container=styled.div
 `

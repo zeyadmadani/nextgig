@@ -66,6 +66,7 @@ return(<>
 <Link to="/EmployerSignIn"><button className="sec">Don't have an account? Sign Up Instead</button></Link>
 <br/><br/>
 <Link to="/forgot-password"><div className="centerTxt">Forgot Password?</div></Link>
+<br/><br/>
 </div>
 </div>
 </div>
