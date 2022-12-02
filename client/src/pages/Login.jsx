@@ -1,7 +1,7 @@
 import Footer from "../components/Footer"
 import Nav from "../components/Nav"
 import LoginForm from "../components/LoginForm"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import styled from "styled-components"
 import "../styles/Login.css"
 import { useDispatch } from "react-redux";
@@ -14,6 +14,7 @@ const EmployerSignIn=()=>
 const [email,setEmail]=useState("")
 const [password,setPassword]=useState("")
 const navigate=useNavigate()
+
 const handleLogin=(e)=>
 {
     e.preventDefault()

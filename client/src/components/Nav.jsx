@@ -69,6 +69,10 @@ export const Nav= () => {
   const [searchBar,setSearchBar]=useState(false)
   const [query1,setQuery1]=useState("")
   const [query2,setQuery2]=useState("")
+  useEffect(()=>
+{
+    console.log("search is",searchBar)
+},[searchBar])
   const handleClick=()=>
   {
     setSearchBar(true)
