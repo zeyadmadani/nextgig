@@ -217,7 +217,7 @@ return(<>
         <Seperator></Seperator>
         <Element>
 <h6>Location</h6>
-<div>{currentJob.city}
+<div>{currentJob.address}, {currentJob.city}
 </div>
         </Element>
         <Seperator></Seperator>
@@ -296,7 +296,7 @@ return(<>
         <div>
             <Title style={{fontSize:13}}>{currentJob.title}</Title>
             <Company style={{fontSize:13}}>{currentJob.company}</Company>
-            <Location style={{fontSize:13}}>{currentJob.city}</Location>
+            <Location style={{fontSize:13}}>{currentJob.address}, {currentJob.city}</Location>
         </div>
     </General>
 <RightSec>
@@ -375,7 +375,7 @@ return(<>
         <div>
             <Title style={{fontSize:13}}>{currentJob.title}</Title>
             <Company style={{fontSize:13}}>{currentJob.company}</Company>
-            <Location style={{fontSize:13}}>{currentJob.city}</Location>
+            <Location style={{fontSize:13}}>{currentJob.address}, {currentJob.city}</Location>
         </div>
     </General>
 <RightSec>
@@ -397,7 +397,7 @@ return(<>
         <Seperator></Seperator>
         <Element>
 <h6>Location</h6>
-<div>{currentJob.city}
+<div>{currentJob.address}, {currentJob.city}
 </div>
         </Element>
         <Seperator></Seperator>
