@@ -11,6 +11,7 @@ import { axiosInstance } from "../configuration/Config"
 const EmployerSignUp=()=>
 {
     const dispatch=useDispatch()
+    const [loading,setLoading]=useState()
     const [email,setEmail]=useState("")
     const [name,setName]=useState("")
 const [password,setPassword]=useState("")
@@ -23,12 +24,13 @@ const Login=async()=>
 
     try 
     {
-    
+        setLoading(true)
         const res1=await axiosInstance.post("/Auth/register-employer",{company:name,email:email,password:password})
         if(res1.status===200)
         {
             dispatch(loginStart())
             const res2=await axiosInstance.post("/Auth/login-employer",{email:email,password:password})
+            setLoading(false)
             res2.status===200 && dispatch(loginSuccess(res2.data)) && navigate("/upload-logo")
         }
     
@@ -72,8 +74,10 @@ return(<>
 <br/>
 <input className="kuhdjf" onChange={e=>{setPassword(e.target.value)}} type="password" required name="password"/>
 <br/><br/><br/>
-<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign Up"/>
 
+{loading ? <img width={50} height={50} src="/loadinggg.gif"/>
+:<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign Up"/>
+}
 
 </form>
 <Link to="/EmployerSignIn"><button className="sec">Already Registered? Log In Instead</button></Link>

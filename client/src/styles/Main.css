@@ -45,3 +45,15 @@ border-radius: 50%;
     display: none !important;
 }
 }
+.jhkhdfgdfs:hover
+{
+    transform: scale(1.1);
+    color:crimson;
+    transition-duration: 0.2s;
+}
+.jiukhj
+{
+    text-align: center !important;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}

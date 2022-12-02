@@ -13,6 +13,7 @@ const LoginToContinue=()=>
     const dispatch=useDispatch()
     const navigate=useNavigate()
 const [email,setEmail]=useState("")
+const [loading,setLoading]=useState()
 const [password,setPassword]=useState("")
 const handleLogin=(e)=>
 {
@@ -22,9 +23,11 @@ const Login=async()=>
 
     try 
     {
+        setLoading(true)
         dispatch(loginStart())
         const res=await axiosInstance.post("/Auth/login-employee",{email:email,password:password})
         res.status===200 && dispatch(loginSuccess(res.data))
+        setLoading(false)
         res.status===200 && navigate("/")
     }
     catch(e)
@@ -59,7 +62,9 @@ return(<>
 <input className="kuhdjf" onChange={e=>{setPassword(e.target.value)}} type="password" required name="password"/>
 <br/><br/>
 
-<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign In"/>
+{loading ? <img width={50} height={50} src="/loadinggg.gif"/>
+:<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign In"/>
+}
 <p style={{color:"crimson"}} className="changeFont">Please Log In to Continue</p>
 
 </form>

@@ -12,6 +12,7 @@ const EmployerSignIn=()=>
 {
     const dispatch=useDispatch()
 const [email,setEmail]=useState("")
+const [loading,setLoading]=useState()
 const [password,setPassword]=useState("")
 const navigate=useNavigate()
 
@@ -23,9 +24,11 @@ const Login=async()=>
 
     try 
     {
+        setLoading(true)
         dispatch(loginStart())
         const res=await axiosInstance.post("/Auth/login-employee",{email:email,password:password})
         res.status===200 && dispatch(loginSuccess(res.data))
+        setLoading(false)
         res.status===200 && navigate("/")
 
     }
@@ -61,7 +64,10 @@ return(<>
 <br/>
 <input className="kuhdjf" onChange={e=>{setPassword(e.target.value)}} type="password" required name="password"/>
 <br/><br/><br/>
-<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign In"/>
+{loading ? <img width={50} height={50} src="/loadinggg.gif"/>
+:<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign In"/>
+}
+
 
 
 </form>

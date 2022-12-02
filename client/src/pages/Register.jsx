@@ -13,6 +13,7 @@ const Register=()=>
     const dispatch=useDispatch()
     const [email,setEmail]=useState("")
     const [name,setName]=useState("")
+    const [loading,setLoading]=useState()
 const [password,setPassword]=useState("")
 const navigate=useNavigate()
 const handleLogin=(e)=>
@@ -23,11 +24,12 @@ const Login=async()=>
 
     try 
     {
-    
+        setLoading(true)
         const res1=await axiosInstance.post("/Auth/register-employee",{name:name,email:email,password:password})
         if(res1.status===200)
         {
             dispatch(loginStart())
+            setLoading(true)
             const res2=await axiosInstance.post("/Auth/login-employee",{email:email,password:password})
             res2.status===200 && dispatch(loginSuccess(res2.data)) && navigate("/upload-resume-first")
         }
@@ -70,8 +72,9 @@ return(<>
 <br/>
 <input className="kuhdjf" onChange={e=>{setPassword(e.target.value)}} type="password" required name="password"/>
 <br/><br/><br/>
-<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign Up"/>
-
+{loading ? <img width={50} height={50} src="/loadinggg.gif"/>
+:<input style={{color:"#fff",width:80}} className="btn btn-primary btn-block mb-4 minBtn centerTxt" type="submit" value="Sign Up"/>
+}
 
 </form>
 <Link to="/login"><button className="sec">Already Registered? Log In Instead</button></Link>

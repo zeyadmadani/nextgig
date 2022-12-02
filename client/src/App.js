@@ -15,7 +15,7 @@ import EmployerSignUp from "./pages/EmployerSignUp";
 import Reset from "./pages/Reset";
 import EmployerSignin from "./pages/EmployerSignin";
 import Profile from "./pages/Profile";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ContactInformation from "./pages/ContactInformation";
 import Location from "./pages/Location";
 import Summary from "./pages/Summary"
@@ -36,9 +36,34 @@ import { axiosInstance } from "./configuration/Config";
 import {useState, useEffect} from "react"
 import Error from "./pages/Error";
 import Viewgig from "./pages/Viewgig";
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import CloseIcon from '@mui/icons-material/Close';
+import { setPopup } from "./redux/userSlice";
+import "./styles/Main.css"
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 function App() {
   const {currentUser}=useSelector(state=>state.user)
+  const {popup}=useSelector(state=>state.user)
+  const dispatch=useDispatch()
   const [jobs,setJobs]=useState([])
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   useEffect(()=>
   {
   const getAllJobs=async()=>
@@ -48,6 +73,14 @@ function App() {
   }
   getAllJobs()
   
+  },[])
+  useEffect(()=>
+  {
+    setTimeout(() => {
+      if(popup)
+      handleOpen()
+      dispatch(setPopup(false))
+    }, 3000);
   },[])
   return (
     <div className="App">
@@ -101,6 +134,30 @@ function App() {
  <Route path="*" element={<Error/>} />
 </Routes>
 </BrowserRouter>
+<Modal
+  open={open}
+  onClose={handleClose}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+>
+  <Box sx={style}>
+    <CloseIcon className="jhkhdfgdfs" onClick={handleClose} style={{position:"absolute",top:5,right:10,fontSize:40,cursor:"pointer"}}/>
+    <Typography style={{position:"relative"}} id="modal-modal-title" variant="h6" component="h2">
+<NotificationsIcon style={{color:"blue",margin:"0 auto",display:"block",fontSize:50}}/>
+    </Typography>
+    <Typography style={{textAlign:"center"}} id="modal-modal-description" sx={{ mt: 2 }}>
+
+<p className="jiukhj">
+  Dear Hiring Manager,
+</p>
+<p className="jiukhj" style={{textAlign:"center"}}>
+  Please be advised that this is a Fullstack Web Application. As a result, You may register an Account and log in to discover the various features that the Application has.
+</p>
+<p className="jiukhj">Thanks So Much,</p>
+<p className="jiukhj">Omar Kanaan</p>
+    </Typography>
+  </Box>
+</Modal>
     </div>
   );
 }

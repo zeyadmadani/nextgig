@@ -3,7 +3,8 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     currentUser:null,
 loading:false,
-error:false
+error:false,
+popup:true
 }
 
 export const userSlice = createSlice({
@@ -48,6 +49,9 @@ export const userSlice = createSlice({
         },updateLogo:(state,action)=>
         {
             state.currentUser.companyLogo=action.payload
+        },setPopup:(state,action)=>
+        {
+            state.popup=action.payload
         },updateJobs:(state,action)=>
         {
             if(!state.currentUser.jobsAppliedFor.includes(action.payload))
@@ -63,6 +67,6 @@ export const userSlice = createSlice({
         }
     }
   })
-  export const { loginStart,changeName,image,loginSuccess,updateLogo,loginFailure,logOut,changeEmail,changePhone,updateJobs,changeAddress,changeCountry,changeSummary,updateResume } = userSlice.actions
+  export const { loginStart,changeName,image,loginSuccess,updateLogo,loginFailure,logOut,changeEmail,changePhone,setPopup,updateJobs,changeAddress,changeCountry,changeSummary,updateResume } = userSlice.actions
 
 export default userSlice.reducer

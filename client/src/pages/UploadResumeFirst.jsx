@@ -82,7 +82,7 @@ return(<>
 <div className="main">
 
 
-<div style={{minHeight:10,top:"32%"}} className="con">
+<div style={{minHeight:10,top:"25%"}} className="con">
 <div style={{textAlign:"center"}}>
 <form >     
  <br/>
