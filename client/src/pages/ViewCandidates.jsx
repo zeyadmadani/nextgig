@@ -27,7 +27,7 @@ const ViewCandidates=()=>
             setLoading(true)
 const res=await axiosInstance.get(`/Jobs/getcandidates/${id}`)
 setLoading(false)
-res.status===200 && setJobs(res.data)
+res.status===200 && setJobs(res.data.reverse())
         }
         Fun()
 

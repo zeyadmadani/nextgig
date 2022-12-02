@@ -20,7 +20,7 @@ const Fun=async()=>
 {
     setLoading(true)
 const res=await axiosInstance.get(`/Jobs/getemployerjobs/${currentUser._id}`)
-res.status===200 && setJobs(res.data)
+res.status===200 && setJobs(res.data.reverse())
  setLoading(false)
 }
 Fun()
