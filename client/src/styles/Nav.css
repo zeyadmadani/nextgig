@@ -1,0 +1,163 @@
+*
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.lastSpot
+{
+    gap:15px;
+    align-items: center;
+}
+.Thirdbtn
+{
+    display: none;
+}
+@media only screen and (max-width: 1280px) 
+{
+    .JNBHkhjhmNKLJGTHGHlkujhjbgvktfgj
+    {
+        display: block !important;
+    }
+    .spot
+{
+display: none !important;
+}
+.FirstBtn , .SecondBtn
+{
+    display: none !important;
+}
+.Thirdbtn
+{
+    display: block;
+}
+}
+.FirstBtn
+{
+background-color: rgb(176, 81, 170);
+line-height:18px;
+font-weight:600;
+height:45px;
+padding:7px 12px;
+width:80px;
+font-size: 12px !important;
+border-radius: 5px;
+color:#fff;
+cursor: pointer;
+margin-right:10px;
+}
+.SecondBtn
+{
+    background-color: inherit;
+    color:#fff;
+    border:2px solid gold;
+    line-height:16px;
+    height:41px;
+    font-weight:600;
+    border-radius: 2px;
+    padding:11px 12px;
+    cursor: pointer;
+    font-size: 12px !important;
+}
+.jhklhbuyt6k7iyu83iu9j8o7hi638oujyheg27iyukhj
+{
+    gap:20px;
+}
+.spot
+{
+    display: flex;  
+    gap:80px;
+}
+.tools
+{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px) 
+{
+    .kjhJUKJbJHMGkJGBHKFDJDsedss
+    {
+        display: block !important;
+        cursor:pointer;
+    }
+    .iufdj
+    {
+        display: block !important;
+    }
+    .concon 
+    {
+        width:40% !important;
+    }
+    .concon::placeholder
+    {
+    font-size: 10px !important; 
+}
+    .inpcon
+    {
+        position:absolute;
+        margin-left: 0;
+        margin-right: 0;
+        top:25px;
+        left: 5px;
+        right: 5px;
+        padding:8px;
+        text-align: center;
+        background-color:#fff;
+        border-radius: 20px;
+        transform: translateY(0px);
+        z-index: -999999999999999999 !important;
+        opacity: 1 !important;
+    }   
+    .jdhks
+    {
+        animation-duration: 0.25s;
+        transition-duration: 0.2s;
+        opacity: 0 flex !important;
+        z-index: 9999999999999999999999999999999999 !important;
+    }
+    .ifdujfed
+    {
+        width:70px;
+    }
+}
+.sidebar
+{
+    background-color: rgb(76, 65, 114);;
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    right:0;
+    height:100vh;
+    z-index: 999999999 !important;    
+}
+.dfsds
+{
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom: 0;
+    right:0;
+    height:100vh;
+    z-index: 999999999 !important;  
+    background-color: rgb(35,9,57) !important;
+    transform:translateY(0px);
+    transition: 0.4s ease-in-out;
+
+}
+
+.hide
+{
+    transform:translateY(-1200px);
+}
+
+.css-1w1rijm-MuiButtonBase-root-MuiButton-root
+{
+    outline: none !important;
+}
+.hgjksuijgkfds
+{
+background-color: white;
+border-color: #fff;
+height:0px !important;
+width:0px !important;
+outline:none !important;
+}

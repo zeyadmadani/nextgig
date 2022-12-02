@@ -1,0 +1,46 @@
+
+.Main
+{
+background-color: #e7e7e7;
+height: 100vh;
+
+}
+.filterBtn
+{
+    width:100px;
+    border-radius: 5px;
+    background-color: rgb(176, 81, 170);
+    border: none;
+    height:35px;
+}
+.iudkhdilu:hover 
+{
+    transition-duration: 0.2s;
+    border:2px solid rgb(184, 177, 192);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.7) !important;
+}
+@media only screen and (max-width: 1280px) 
+{
+.jhdksfdg
+{
+    display: none !important;
+}
+.jhbkdfjns
+{
+width:60px;
+height:60px;
+}
+.jiudfkj
+{
+    display: block;
+    margin:0 auto;
+}
+.HHJKHYUjhxjhgbhjkhgcfxdxfKHGJHTRCJHGJK
+{
+    display: block !important;
+}
+.riuskdjdeis
+{
+    display: none !important;
+}
+}

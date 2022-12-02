@@ -1,0 +1,8 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: none !important;
+  }

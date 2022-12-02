@@ -1,0 +1,52 @@
+.createAcct:hover
+{
+text-decoration: underline;
+}
+@media only screen and (max-width: 992px) 
+{
+.iudfrms
+{
+    display: none !important;
+}
+}
+@media only screen and (max-width: 990px) 
+{
+.hgfdfsfds
+{
+display: block !important;
+position: fixed !important;
+top:0 !important;
+right:0 !important;
+left:0 !important;
+display:flex;
+flex-direction:column;
+gap:10px;
+overflow-y: scroll;
+position: sticky;
+padding:10px;
+height: 100vh;
+font-size: 14px;
+top: 0;
+top:0;
+left:0;
+right:0;
+z-index: 99999999999999999999999999999999999999999999999;
+}
+}
+
+
+@media only screen and (max-width: 990px) 
+{
+    .fdolkjfds
+    {
+        display: none !important;
+    }
+    .jifkdhfbed
+    {
+        display: none !important;
+    }
+}
+.dfsrdsfds
+{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}

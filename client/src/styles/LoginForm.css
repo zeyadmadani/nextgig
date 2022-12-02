@@ -1,0 +1,74 @@
+.loginbtn
+{
+    font-family: 'Nunito Sans', sans-serif;
+    cursor:pointer;
+}
+.loginheader
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight:600;    
+}
+.emailsection 
+{
+ text-align: left;
+}
+.centerLeft
+{
+    text-align: left !important;
+    margin:0;
+    padding:0;
+}
+.minBtn
+{
+    width:140px;
+    margin:0 auto;
+    display:block;
+    text-align:center;
+    background-color:#3d2462 ;
+}
+.minBtn:hover
+{
+    background-color:#574574;
+}
+.centerTxt
+{
+    text-align: center !important;
+    color:#574574;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.changeFont
+{
+    text-align: center !important;
+    color:#574574;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+.fdgfds
+{
+    text-align: left !important;
+    margin-left:10px;
+    margin-top:10px;
+    border-bottom: 2px solid rgb(217, 219, 233);
+    color:#574574;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;  
+}
+.jhdss
+{
+    text-align: left !important;
+    margin-left:10px;
+    margin-top:10px;
+    font-size:15px;
+    border-bottom: 2px solid rgb(217, 219, 233);
+    color:black;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.jhkfd
+{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.iukfdh
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}

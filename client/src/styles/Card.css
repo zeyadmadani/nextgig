@@ -1,0 +1,97 @@
+*
+{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.specificItem
+{
+    display: flex;
+    justify-content: space-between;
+}
+.easilyApplyBtn
+{
+    height:40px;
+    border:none;
+    color:#fff;
+    background-color: rgb(110, 70, 174);
+    border-radius:5px;
+    width:125px;
+    padding:15px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fgdsfsgds
+{
+    height:40px;
+    border:none;
+    color:#fff;
+    background-color: rgb(140, 126, 161);
+    border-radius:5px;
+    width:125px;
+    padding:5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items
+{
+    
+    align-items: center;
+}
+.bottomSection
+{
+    align-items: center;
+}
+@media only screen and (max-width: 1280px) 
+{
+.huidkfjs
+{
+    width:100% !important;
+}
+}
+@media only screen and (min-width: 521px) and (max-width: 1300px) {
+    .ikjhred
+    {
+width:100% !important; 
+margin:0 !important;
+padding:0 !important
+    }
+  }
+
+  @media only screen and (min-width: 1300px) and (max-width: 1700px) {
+    .ikjhred
+    {
+width:95% !important; 
+margin:0 !important;
+padding:0 !important
+    }
+  }
+  @media only screen and (min-width: 1190px) 
+{
+    .ikjhred
+    {
+width:400px !important; 
+margin:0 !important;
+padding:0 !important
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+    .ikjhred
+    {
+width:100% !important; 
+margin:0 !important;
+padding:0 !important;
+    }
+  }
+.jkHYKUjuljhBKUGTJGyhkiUGBio
+{
+    width:50px;
+    height:50px;
+}
+.gfdgfdszfdgrdser
+{
+    width:200px !important; 
+}
