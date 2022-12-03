@@ -1,7 +1,6 @@
 import express from "express"
 import morgan from "morgan"
 import dotenv from "dotenv"
-import cors from "cors"
 import cookieparser from "cookie-parser"
 import mongoose from "mongoose"
 import EmployeeRoute from "./routes/EmployeeRoute.js"
@@ -25,7 +24,6 @@ app.use((err,req,res,next)=>
             message
         })
 })
-app.use(cors())
 app.use(morgan("common"))
 app.use(express.json())
 app.use(cookieparser())
