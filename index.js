@@ -9,7 +9,6 @@ import AuthRoute from "./routes/AuthRoute.js"
 import JobsRoute from "./routes/JobRoute.js"
 import { fileURLToPath } from 'url';
 import path from "path"
-import cors from "cors"
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config()

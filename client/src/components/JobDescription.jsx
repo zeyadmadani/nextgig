@@ -318,7 +318,7 @@ return(<>
         <Seperator></Seperator>
         <Element>
 <h6>Location</h6>
-<div>{currentJob.adress}, {currentJob.city}
+<div>{currentJob.address}, {currentJob.city}
 </div>
         </Element>
         <Seperator></Seperator>
