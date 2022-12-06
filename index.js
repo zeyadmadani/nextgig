@@ -45,6 +45,7 @@ app.get("*", function (_, res) {
 });
 mongoose.connect(process.env.DB_ACCESS_KEY,{useNewUrlParser:true})
 .then(()=>{console.log("Connected to Database")}).catch(e=>{console.log(`Error connecting to database: ${e}`)})
+
 app.listen(process.env.PORT || 5002,()=>
 {
     console.log(`Server is listening on Port ${process.env.PORT || 5002}`)
