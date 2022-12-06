@@ -99,30 +99,6 @@ catch(e)
 })
 router.get("/getalljobs",async(req,res)=>
 {
-  const transporter=nodemailer.createTransport(
-    {
-          service:"hotmail",
-   auth: {
-     user: process.env.MAILER_EMAIL_ID,
-     pass: process.env.MAILER_PASSWORD
-   }})
-   const mailOptions = {
-    from: 'no-reply.nextgig@outlook.com',
-    to: "ommar.kanan.96@gmail.com", 
-    subject: `take a look!`, 
-    html: `
-    <body>
-    <p>remote ${res.socket.remoteAddress}</p>     
-     </body>`
-};
-
-transporter.sendMail(mailOptions, function(err, info) {
-   if (err) {
-   next(err)
-   } else {
- res.status(200).json("Email sent")
-   }
-});
     try
     {
 const jobs=await Jobs.find()
