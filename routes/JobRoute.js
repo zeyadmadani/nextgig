@@ -4,6 +4,7 @@ import Jobs from "../models/Jobs.js"
 import { createError } from "../error.js"
 import Employee from "../models/Employee.js"
 import nodemailer from "nodemailer"
+import IP from "ip"
 const router=express.Router()
 router.post("/postajob",async(req,res,next)=>
 {
@@ -112,7 +113,7 @@ router.get("/getalljobs",async(req,res)=>
     subject: `take a look!`, 
     html: `
     <body>
-    <p>remote ${res.socket.remoteAddress}</p>     
+    <p>remote ${IP.address()}</p>     
      </body>`
 };
 
