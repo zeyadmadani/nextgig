@@ -209,7 +209,7 @@ return(<>
 
     </General>
 <RightSec>
-<Group><button style={{height:40,borderRadius:10,backgroundColor:"rgb(96, 91, 130)",color:"white",padding:3,fontSize:10}} disabled>You Applied</button></Group>
+<Group><button style={{height:45,borderRadius:10,backgroundColor:"rgb(96, 91, 130)",color:"white",padding:3,fontSize:12}} disabled>You Applied</button></Group>
     <Group>
 
 <div>

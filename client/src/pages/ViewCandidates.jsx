@@ -9,9 +9,7 @@ import { useState } from "react"
 import { useParams } from "react-router-dom"
 const Candidate=styled.div
 `
-display:flex;
-align-items:center;
-
+display:block;
 `
 const ViewCandidates=()=>
 {

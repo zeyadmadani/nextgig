@@ -2,7 +2,7 @@ import Nav from "../components/Nav"
 import styled from "styled-components"
 import SingleJobDescription from "../components/SingleJobDescription"
 import { useParams } from "react-router-dom"
-import EmployerFooter from "../components/EmployerFooter"
+import Footer from "../components/Footer"
 const Container=styled.div
 `
 min-height:100vh;
@@ -30,7 +30,7 @@ return(<>
     </div>
 
 </Container>
-<EmployerFooter/>
+<Footer/>
 </>)
 }
 export default Viewgig

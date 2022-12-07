@@ -77,9 +77,9 @@ function App() {
   useEffect(()=>
   {
     setTimeout(() => {
-      if(popup)
+      if(popup && !currentUser)
       handleOpen()
-      dispatch(setPopup(false))
+    dispatch(setPopup(false))
     }, 3000);
   },[])
   return (

@@ -13,6 +13,5 @@ router.post("/login-employee",EmployeeLogin)
 router.post("/register-employer",RegisterEmployer)
 router.post("/login-employer",LoginEmployer)
 router.post("/reset",forgotPassword)
-
 router.post("/newpass",newpass)
 export default router
