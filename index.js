@@ -8,6 +8,7 @@ import EmployerRoute from "./routes/EmployerRoute.js"
 import AuthRoute from "./routes/AuthRoute.js"
 import JobsRoute from "./routes/JobRoute.js"
 import { fileURLToPath } from 'url';
+import cors from "cors"
 import path from "path"
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,6 +25,7 @@ app.use((err,req,res,next)=>
             message
         })
 })
+app.use(cors())
 app.use(morgan("common"))
 app.use(express.json())
 app.use(cookieparser())
