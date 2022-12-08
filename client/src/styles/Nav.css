@@ -85,6 +85,7 @@ margin-right:10px;
     .concon 
     {
         width:40% !important;
+        font-weight: bold;
     }
     .concon::placeholder
     {
