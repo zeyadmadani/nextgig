@@ -71,7 +71,7 @@ router.put("/applyforajob/:id",async(req,res,next)=>
              pass: process.env.MAILER_PASSWORD
            }})
            const mailOptions = {
-            from: 'no-reply.nextgig@outlook.com',
+            from: 'no_reply.nextgig@outlook.com',
             to: employerInfo.email, 
             subject: `${employee.name}'s Resume - New Application Received`,
             html: `
@@ -128,7 +128,7 @@ router.put("/sendemailtoclient/:id",async(req,res,next)=>
              pass: process.env.MAILER_PASSWORD
            }})
            const mailOptions = {
-            from: 'no-reply.nextgig@outlook.com',
+            from: 'no_reply.nextgig@outlook.com',
             to: emp.email, 
             subject: `Your Application Has Been Received`, 
             html: `
