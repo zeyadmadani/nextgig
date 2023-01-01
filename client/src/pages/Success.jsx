@@ -23,7 +23,7 @@ return(<main>
 <div style={{height:"15rem",display:"flex",alignItems:"center",justifyContent:"center"}} className="changeFont">
 You have successfully applied for the {title} at {company}
 </div>
-<Footer/>
+<Footer style={{position:fixed;bottom:0;left:0;right:0;}}/>
 </main>)
 }
 export default Success 
