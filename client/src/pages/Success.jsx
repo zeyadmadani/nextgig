@@ -20,7 +20,7 @@ Fun()
     },[path])
 return(<main>
 <Nav/>
-<div style={{height:"15rem",display:"flex",alignItems:"center",justifyContent:"center"}} className="changeFont">
+<div style={{minHeight:"70vh",display:"flex",alignItems:"center",justifyContent:"center"}} className="changeFont">
 You have successfully applied for the {title} at {company}
 </div>
 <Footer/>
